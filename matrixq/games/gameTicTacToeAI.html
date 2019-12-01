@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="icon" href="ticTac.ico" type="image/png">-->
+<meta charset="utf-8" />
+<title>TicTacToe</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "../css/primary.css" />
+</head>
+<h1>TicTacToe - Human Vs. AI</h1>
+<body onload="displayVersion()">
+<form action="/action_page.php" method="get" id="myTable">
+
+<table style="width: 10%" border="1.0">
+	<tr>
+		<td width="40" height="40" align="center" style="font-size:28px" id="A1" onClick="NewMove('A1')"> </td>
+		<td width="40" height="40" align="center" style="font-size:28px" id="A2" onClick="NewMove('A2')"> </td>
+		<td width="40" height="40" align="center" style="font-size:28px" id="A3" onclick="NewMove('A3')"> </td>
+	</tr>
+	<tr>
+		<td width="40" height="40" align="center" style="font-size:28px" id="B1" onClick="NewMove('B1')"> </td>
+		<td width="40" height="40" align="center" style="font-size:28px" id="B2" onClick="NewMove('B2')"> </td>
+		<td width="40" height="40" align="center" style="font-size:28px" id="B3" onclick="NewMove('B3')"> </td>
+	</tr>
+	<tr>
+		<td width="40" height="40" align="center" style="font-size:28px" id="C1" onClick="NewMove('C1')"> </td>
+		<td width="40" height="40" align="center" style="font-size:28px" id="C2" onClick="NewMove('C2')"> </td>
+		<td width="40" height="40" align="center" style="font-size:28px" id="C3" onclick="NewMove('C3')"> </td>
+	</tr>
+</table>
+
+</form>
+<button onclick="clearthetable()">Reset</button>
+<p id="status"></p>
+
+
+<p>Human moves first, computer will play automatically.</p>
+<p id="version"></p>
+</body>
+<script src="../js/gameTicTacToeAI.js"></script>
+</html>

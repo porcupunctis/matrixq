@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Letter</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "../css/primary.css" />
+<body>
+</head>
+<h1>Letter of Recommendation</h1>
+<body>
+Enter your first name<input type="text" id="firstName"> <br>
+Enter your last name<input type="text" id="lastName"> <br>
+Is this letter for a school or a scholarship? <select id="recType">
+  <option value="School">School</option>
+  <option value="Scholarship">Scholarship</option>
+  </select><br>
+  How many years have you known Mr. Massey as a coach or teacher? <select id="years">
+	<option value="one">one</option>
+	<option value="two">two</option>
+	<option value="three">three</option>
+	<option value="four">four</option>
+	<option value="five">five</option>
+	<option value="six">six</option>
+  </select><br>
+  What math or computer science classes have you taken with Mr. Massey?<br>
+  <input type="text" id="class1"> <br>
+<input type="text" id="class2"> <br>
+<input type="text" id="class3"> <br>
+<input type="text" id="class4"> <br>
+Name the school or scholarship this letter is for: <input type="text" id="recName"><br>
+List all clubs and organizations that you have been involved with:<br>
+<input type="text" id="club1"> <br>
+<input type="text" id="club2"> <br>
+<input type="text" id="club3"> <br>
+<input type="text" id="club4"> <br>
+List all sports and activities that you have been involved with:<br>
+<input type="text" id="sport1"> <br>
+<input type="text" id="sport2"> <br>
+<input type="text" id="sport3"> <br>
+<input type="text" id="sport4"> <br>
+<br>
+<button onclick="createLetter()">Submit</button><br><br>
+<p id="outLetter"></p>
+</body>
+<script src="../js/utilLetterOfRec.js"></script>
+</html>

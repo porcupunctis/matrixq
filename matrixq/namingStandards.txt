@@ -1,0 +1,44 @@
+The following standards for naming and placing files
+should be followed in order to keep the site organized
+and easier to maintain in the future:
+
+File Placement:
+The index.html, highSchoolClock.html, middleSchoolClock.html, 
+and their immediately related help and about files should be
+placed at the top level of the heirarchy. Other files such as
+comingSoon.html and stub.html may also be placed here.  It is
+important to limit the number of files at this level in order
+to make maintaining the site easier.
+
+Any .css files should be in the css folder.  At the moment, there
+should be only one css file that is used for the entire site to
+maintain a consistent look and feel.  Any new css files should be
+considered carefully.
+
+Any .js files should be in the js folder regardless of where the
+corresponding html file is located.  Files names for js files
+should match their respective html file unless they are designed
+to be used across many html files within the site.
+
+Any graphics files should be located in the img folder.  If they
+are favicons, they should have a name that corresponds with the 
+primary html page they are used with.
+
+There are second-level folders for utilities, games, and videos.
+All html files related to these categories should be placed in
+their matching sub folder along with the menu file for that
+category.  
+
+File Naming:
+File names should be descriptive as possible without being
+inordinately long.  Names should follow the camel-case convention
+with the first letter being lower-case.
+Files in the second level folders should start with util, game, or
+video as appropriate.  If the file represents a Menu, then that
+should be the next word in the name.  For example, the main menu
+in the video folder should be videoMenuMain.html.
+All files should end with an appropriate file type indicator such as
+.html, .css, .js, etc.
+Corresponding "about" files should start with 'about' and be followed
+by the matching html file.
+

@@ -1,0 +1,152 @@
+/*
+Default style information for any element in the body of the page
+Can be over-ridden by a more specific element such as a 
+paragraph, header, or table style
+*/
+	* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	 font-family:"Courier New", Courier, monospace;
+    background-color: darkslategrey;
+    color: #FFBF00;
+    font-size: 1.1em;
+}
+
+/*
+Default header 1 style.  Can be over-ridden by a header with specific
+class label.
+*/
+h1 {
+    color: #FFBF00;
+}
+
+/*
+Default header 2 style.  Can be over-ridden by a header with specific
+class label.
+*/
+h2 {
+    color: #FFBF00;
+}
+
+/*
+Default hyperlink style.  Can be over-ridden by a hyperlink with specific
+class label.
+*/
+a {
+    color: #FFBF00;
+}
+
+/*
+Default paragraph style.  Can be over-ridden with a paragraph that has
+a specific class label
+*/
+p {
+    background-color: darkslategrey;
+    color: #FFBF00;
+    font-size: 1.1em;
+}
+
+/*
+These style elements are specific to the progress bar in the clock
+page.  Though any progress bar with the same name will pick up 
+this style.
+*/
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 15px;
+    background-color: green;
+}
+
+/*
+Style elements for input boxes both number and text as
+well as the select combo box.
+I have them separated so that they could be made 
+different if need be.
+*/
+input[type=number] {
+	 color: #FFBF00;
+    width: 9%;
+    padding: 2px 2px;
+    margin: 2px 0;
+    background-color: grey;
+    border-color: grey;
+}
+input[type=text] {
+	 color: #FFBF00;
+    width: 9%;
+    padding: 2px 2px;
+    margin: 2px 0;
+    background-color: grey;
+    border-color: grey;
+}
+input[type=datetime-local] {
+	 color: #FFBF00;
+    width: 18%;
+    padding: 2px 2px;
+    margin: 2px 0;
+    background-color: grey;
+    border-color: grey;
+}
+select {
+	 color: #FFBF00;
+    padding: 2px 2px;
+    margin: 2px 0;
+    background-color: grey;
+    border-color: grey;
+}
+
+/* 
+The following style elements are used for the tables on the
+main clock page and the utilities page. Any other table that
+needs a similar look should use these or clone them so that
+only the needed adjustments can be made.
+*/
+.tg  {
+	border: 2px solid #FFBF00;
+	border-width: medium;
+   border-spacing:2;
+   }
+.tg .tg-uv3p{
+	font-family:"Courier New", Courier, monospace;
+	background-color:darkslategrey;
+	border: 2px solid #FFBF00;
+	border-color:#FFBF00;
+	text-align:center;
+	vertical-align:center;
+	padding:3px 20px 3px 20px;
+	}
+	
+	canvas{
+	
+	border: 5px solid #FFBF00;
+	
+	} 
+	
+hr { 
+  border: 0; 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #FFBF00; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 

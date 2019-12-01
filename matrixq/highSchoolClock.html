@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HS Clock V1.1</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "css/primary.css" />
+
+<link rel="icon" href="img/clockFavicon.png" type="image/png">
+<body onload="startTime()">
+</head>
+<h1>High School Clock</h1>
+<h1 id="currtime"></h1>
+<body>
+
+<p id="thisPeriod">
+</p>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<p id="timeRemaining">
+</p>
+<p>
+<form>
+Adjust Seconds: <input type="number" id="adjText" value="0" size="4">
+</form>
+</p>
+<h2>Quick Links</h2>
+<p>
+
+<table class="tg">
+  <tr>
+    <td class="tg-uv3p"><a href="https://161214.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNOW" target="_blank">Information Now</a></th>
+    <td class="tg-uv3p"><a href="https://nee-onlinemanager.missouri.edu/Login?ReturnUrl=%2f" target="_blank">NEE</a></th>
+    <td class="tg-uv3p"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1Ze9Zh5j5hU6W7lvdh-8HSS_GZBBPc0zpVBcHToar9dGndg/viewform" target="_blank">Student Tutoring Log</a></th>
+    <td class="tg-uv3p"><a href="https://coxhealth.mycernerwellness.com/dt/v2/coxhealthindex.asp" target="_blank">Cox Wellness</a></th>
+  </tr>
+  <tr>
+    <td class="tg-uv3p"><a href="https://cleverbluejays.instructure.com/" target="_blank">Canvas</a></td>
+    <td class="tg-uv3p"><a href="http://cleverbluejays.tandem.co/index.php" target="_blank">School Calendar</a></td>
+    <td class="tg-uv3p"><a href="https://www.clever.k12.mo.us/" target="_blank">Clever R-V</a></td>
+    <td class="tg-uv3p"><a href="https://login.frontlineeducation.com/login?signin=0540285dd7dd29e6a207bf565b318c48&productId=ABSMGMT&clientId=ABSMGMT#/login" target="_blank">Absence</a></td>
+  </tr>
+  <tr>
+    <td class="tg-uv3p"><a href="https://docs.google.com/spreadsheets/d/1n-likCb0QwZvyLpmv9zNQqg7ewdRbM3ZbgF8bLoxo_o/edit?ts=5b748cbb" target="_blank">Advisory List</a></td>
+    <td class="tg-uv3p"><a href="https://drive.google.com/drive/folders/1uVfDwndnSj9to1k28mnf0UgtaoL2HP3r" target="_blank">Phone Extensions</a></td>
+    <td class="tg-uv3p"><a href="https://www.mshsaa.org/" target="_blank">MSHSAA</a></td>
+    <td class="tg-uv3p"><a href="https://dese.mo.gov/" target="_blank">MO DESE</a></td>
+  </tr>
+  <tr>
+    <td class="tg-uv3p"><a href="https://drive.google.com/drive/folders/12lASHJRP9QBEUAZd_5vPrQchVq94Hzfi?usp=sharing" target="_blank">District Documents</a></td>
+    <td class="tg-uv3p"><a href="https://drive.google.com/file/d/0BwZvj4Mk-WuMazU5LU5fR3o1c2c/view?ts=5b72ec65" target="_blank">Bullying Incident Form</a></td>
+    <td class="tg-uv3p"><a href="https://cleverschooldistrict.on.spiceworks.com/portal/tickets" target="_blank">Tech Request</a></td>
+    <td class="tg-uv3p"><a href="https://docs.google.com/document/d/1PxSr_JzgmLIerXR7Kgp9X0YVKpsgyyfMzSQgYTchpCs/edit" target="_blank">2019-2020 Back to School Information</a></td>
+  </tr>
+  <tr>
+    <td class="tg-uv3p"><a href="https://docs.google.com/spreadsheets/d/13B0fVQmq0AVv_4QV6WGyWF2sfGpp-rNeA6zrsfSGuRw/edit?ts=5d83c863#gid=192551135" target="_blank">Eligibility Check</a></td>
+    <td class="tg-uv3p"><a href="https://www.jostensrenaissance.com/theharbortv/" target="_blank">The Harbor</a></td>
+    <td class="tg-uv3p"><a href="games/menuMainGames.html" target="_blank">Games</a></td>
+    <td class="tg-uv3p"><a href="utilities/menuMainUtilities.html" target="_blank">Utilities</a></td>
+  </tr>
+  <tr>
+    <td class="tg-uv3p"><a href="videos/menuMainVideos.html" target="_blank">Math Videos</a></td>
+    <td class="tg-uv3p"><a href="https://docs.google.com/document/d/15y72GjcqAmrfx5BlhD6WcPjHa5DxEC-o9tdqcCYBnIs/edit" target="_blank">Graduation Requirements</a></td>
+    <td class="tg-uv3p"><a href="https://docs.google.com/document/d/1Yqmb-Mo8bgUICxwBQ_4W4gGxr8-FeJk4ZC8yzrz6HSo/edit" target="_blank">HS Course Descriptions</a></td>
+    <td class="tg-uv3p"><a href="https://docs.google.com/document/d/1Xt81C8ObqgZThJc-I2cDzpczbvy0kXTRRoXMc8UvExM/edit?ts=5c7ed07d" target="_blank">Student Accounting Form</a></td>
+  </tr>
+  <tr>
+    <td class="tg-uv3p"><a href="mathteam/mathmenu.html" target="_blank">Math Dept Links</a></td>
+    <td class="tg-uv3p"><a href="http://www.usdebtclock.org/?fbclid=IwAR1zi0u109lPKaFLxzl0y0Dq4FqGQaQA7JTH-8bWetQKRyAp0zNt-scl1fA" target="_blank">Debt Clock</a></td>
+    <td class="tg-uv3p"><a href="https://docs.google.com/spreadsheets/d/1UBaUB8D2QDDhpz_gxjSAhblsaBr3dsPDa2_USCrzU90/edit#gid=276325815" target="_blank">2019-20 HS Schedule</a></td>
+    <td class="tg-uv3p"><a href="https://projecteuler.net/" target="_blank">Project Euler</a></td>
+  </tr>
+</table>
+</p>
+<p>
+<h2>
+Help Links
+</h2>
+<a href="aboutHighSchoolClock.html" target="_blank">About HS Clock</a>
+<br><br>
+<a href="settingTimeAdjust.html" target="_blank">Setting Time Adjustment</a>
+<br><br>
+<a href="middleSchoolClock.html" target="_blank">Middle School Clock</a>
+</p>
+
+</body>
+<script src="js/highSchoolClock.js"></script>
+</html>

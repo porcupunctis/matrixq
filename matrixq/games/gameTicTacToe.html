@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="icon" href="ticTac.ico" type="image/png">-->
+<meta charset="utf-8" />
+<title>TicTacToe</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "../css/primary.css" />
+</head>
+<h1>The game of TicTacToe</h1>
+<body>
+<form action="/action_page.php" method="get" id="myTable">
+
+<table style="width: 10%" border="1.0">
+	<tr>
+		<td width="20" height="20" align="center" id="A1" onClick="NewMove('A1')"> </td>
+		<td width="20" height="20" align="center" id="A2" onClick="NewMove('A2')"> </td>
+		<td width="20" height="20" align="center" id="A3" onclick="NewMove('A3')"> </td>
+	</tr>
+	<tr>
+		<td width="20" height="20" align="center" id="B1" onClick="NewMove('B1')"> </td>
+		<td width="20" height="20" align="center" id="B2" onClick="NewMove('B2')"> </td>
+		<td width="20" height="20" align="center" id="B3" onclick="NewMove('B3')"> </td>
+	</tr>
+	<tr>
+		<td width="20" height="20" align="center" id="C1" onClick="NewMove('C1')"> </td>
+		<td width="20" height="20" align="center" id="C2" onClick="NewMove('C2')"> </td>
+		<td width="20" height="20" align="center" id="C3" onclick="NewMove('C3')"> </td>
+	</tr>
+</table>
+
+</form>
+<button onclick="clearthetable()">Reset</button>
+<p id="status"></p>
+
+
+<p>This is a two player version of TicTacToe. A one player version is currently being worked on.</p>
+</body>
+<script src="../js/gameTicTacToe.js"></script>
+</html>

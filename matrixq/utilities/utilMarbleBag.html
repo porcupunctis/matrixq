@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Marbles</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "../css/primary.css" />
+<body>
+</head>
+<h1>Marble Bag</h1>
+<body>
+Place <input type="number" id="startNum" min="1" max="99"> marbles into bag <button onclick="setMarbleBag()">Place</button>
+<br>
+<br>
+Or
+<br>
+<br>
+Clear the bag to empty it <button onclick="clearMarbleBag()">Clear</button>
+<br>
+<br>
+<hr>
+<br>
+Select a random marble: <button onclick="selectRandomMarbleBag()">Select Random</button>
+<br>
+<br>
+<br>
+<!-- Or
+Replace this marble: <input type="number" id="replaceNum()"></input> <button onclick="replaceMarbleBag()">Replace</button>
+<br>
+<br> -->
+<hr>
+<br>
+<div class="row">
+<div class="column">
+Status Window:<br>
+<table>
+<tr>
+<td>
+<p id="myStatus"></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="column">
+Marbles in the bag:
+<table>
+<tr>
+<p id="bagStatus"></p>
+</tr>
+</table>
+</div>
+<div class="column">
+Marbles Removed from bag:
+<table>
+<tr>
+<p id="marblesOut"></p>
+</tr>
+</table>
+</div>
+</div>
+
+</body>
+<script src="../js/utilMarbleBag.js"></script>
+</html>
